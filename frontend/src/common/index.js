@@ -1,4 +1,4 @@
-const backendDomain = "http://localhost:8080";
+const backendDomain = "https://shoes-shopping-platform-backend.onrender.com";
 
 const summeryApi = {
   signUp: {
