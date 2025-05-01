@@ -41,14 +41,17 @@ function OrderConfirm() {
         </div>
 
         <div className="flex flex-col lg:flex-col gap-10 px-16">
-          <div className="text-center py-6 flex  flex-col w-full  ">
-            <p className="text-3xl font-bold  text-blue-400">
-              Your Order has been confirm
-            </p>
-            <h3 className="text-xl font-semibold font-sm text-slate-600 ">
-              It will delivered soon
-            </h3>
-          </div>
+          {data.length ==! 0 && !loading && (
+            <div className="text-center py-6 flex  flex-col w-full  ">
+              <p className="text-3xl font-bold  text-blue-400">
+                Your Order has been confirm
+              </p>
+              <h3 className="text-xl font-semibold font-sm text-slate-600 ">
+                It will delivered soon
+              </h3>
+            </div>
+          )}
+
           {/* view product */}
           <div className="w-full max-w-3xl ">
             {loading
